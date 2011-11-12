@@ -1,8 +1,4 @@
-var config = require('./config.js');
-var cron_runner = require('./cron.js');
-
-var cron = new cron_runner(config);
-cron.add([
+var crontab = [
   {
     'gap': 20,
     'action': function(log) {
@@ -15,4 +11,6 @@ cron.add([
       log("Job Two!");
     }
   }
-]);
+];
+
+module.exports = crontab;

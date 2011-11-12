@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /*
  * Logger
  * ----------
@@ -9,7 +11,7 @@ function logger () {
   var config, context, subscriber, publisher;
 
   // Load config
-  this.config = require('./config.js');
+  this.config = require('../config.js');
 
   // Create context
   this.redis = require('redis');
